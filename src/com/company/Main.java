@@ -1,11 +1,25 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        double[] array = {1.2, -3.1, 2.5, 8.9, -5.2, -9.1, 4.89, 1.01, 0.4, -4.25, 12.4, -2.3, -5.1, 4.89, 1.12};
-        double result = calculate(array);
+        double[] array = {1.2, -3.1, 2.5, 8.9, -5.2, -9.1, 4.59, 1.01, 0.4, -4.25, 12.4, -2.3, -5.1, 4.89, 1.12};
+        for (double number: array){
+            System.out.println("число = " + number);
+        }
+        Arrays.sort(array);
+        System.out.println("Алгоритм сортировки массива по возрастанию:");
+        for (double number: array){
+            System.out.println(" " + number);
+        }
+            //Arrays.sort(array);
+            //System.out.println(Arrays.toString(array));
+
+
+            double result = calculate(array);
         System.out.println("Среднее арифмитическое положительных чисел " + result);
 
     }
@@ -30,6 +44,8 @@ public class Main {
 
 
     }
+
+
 }
 
         /*
